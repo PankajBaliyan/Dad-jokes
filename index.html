@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.png">
+	<title>Dad Jokes</title>
 </head>
 
 <body>
@@ -13,9 +14,18 @@
 		<h1 class="title">Random Dad Jokes Generator</h1>
 		<div class="container">
 			<div class="joke">
-				<p></p>
+				<p id="joke-content"></p>
 			</div>
-			<button>Get a Dad Joke</button>
+			<div class="both-buttons">
+				<button type="button" class="button">Get a Dad Joke</button>
+
+				<select class="old-select" id="more-options">
+					<option value="" selected disabled hidden>More Options</option>
+					<option value="Copy" id="copy">Copy</option>
+					<option value="Mail" id="share-mail">Share on Mail</option>
+					<option value="Twitter" id="share-twitter">Share on Twitter</option>
+				</select>
+			</div>
 		</div>
 	</section>
 	<script src="script.js"></script>
